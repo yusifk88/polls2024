@@ -1,0 +1,158 @@
+<template>
+
+    <h1 class="mt-8 text-h5">Community summaries</h1>
+
+    <apexchart
+        v-if="firstCommunity"
+        type="donut"
+        width="500px"
+        :options="chartOptions"
+        :series="series"></apexchart>
+
+    <p class="text-h6">Top 10 deciders</p>
+
+    <v-row>
+        <v-col cols="12" v-for="item in sortedCommunities" :key="item.id">
+            <community-card-component :item="item"></community-card-component>
+        </v-col>
+    </v-row>
+
+
+
+</template>
+
+<script>
+
+import CommunityCardComponent from "./CommunityCardComponent.vue";
+
+export default {
+    name: "CommunitySummaries",
+    components: {CommunityCardComponent},
+    props: {
+        communities: {
+            type: Array
+        }
+    },
+    data() {
+        return {}
+    },
+    computed: {
+
+
+        sortedCommunities() {
+
+        return  this.communities.sort((a, b) => {
+
+                let aSum = 0;
+                let bSum = 0;
+
+                a.candidate_votes.forEach(item => {
+                    aSum += Number(item.total_votes)
+                })
+                b.candidate_votes.forEach(item => {
+                    bSum += Number(item.total_votes)
+                })
+
+
+                return bSum-aSum;
+
+            });
+
+        },
+
+        series() {
+            let setOne = 0;
+            let settwo = 0;
+
+            this.communities.forEach(item => {
+
+
+                if (Number(this.findCandidate(item.candidate_votes, "Amidu Chinnia Issahaku").total_votes) < Number(this.findCandidate(item.candidate_votes, "Issah Mohamed Bataglia").total_votes)) {
+
+                    setOne++;
+
+                } else {
+
+                    settwo++;
+                }
+
+            })
+
+            return [setOne, settwo];
+
+        },
+
+        donutColors() {
+
+            let list = [];
+            let labels = [];
+
+            this.firstCommunity.candidate_votes.forEach(item => {
+                list.push(item.party.color_code);
+
+                labels.push(item.name.toLowerCase().includes("chinnia") ? "Chinnia" : "Bataglia")
+            })
+
+            return {
+                colors: list,
+                labels: labels
+            };
+
+        },
+
+
+        firstCommunity() {
+            return this.communities[0];
+        },
+
+        chartOptions() {
+            return {
+                colors: this.donutColors.colors,
+                chart: {
+                    type: 'donut',
+                },
+                labels: this.donutColors.labels,
+                tooltip: {
+                    y: {
+                        formatter: function (val) {
+                            return "Won in " + val + " communities"
+                        }
+                    }
+                },
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }]
+            }
+
+        }
+    },
+    methods: {
+
+
+        findCandidate(candidates, name) {
+
+            return candidates.find(item => item.name.toLowerCase() === name.toLowerCase())
+
+        }
+
+    },
+    mounted() {
+
+
+        console.log(this.sortedCommunities);
+    }
+}
+</script>
+
+
+<style scoped>
+
+</style>

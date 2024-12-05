@@ -7,6 +7,10 @@ import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
+import {router} from "./router.js";
+import VueApexCharts from "vue3-apexcharts";
+import RecordComponent from "./RecordComponent.vue";
+
 
 const vuetify = createVuetify({
     components,
@@ -132,6 +136,7 @@ const vuetify = createVuetify({
 });
 
 createApp({
+    components:{RecordComponent},
     data(){
         return{
             count:0
@@ -139,4 +144,6 @@ createApp({
     }
 })
     .use(vuetify)
+    .use(router)
+    .use(VueApexCharts)
     .mount('#app');

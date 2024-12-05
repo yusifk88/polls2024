@@ -21,10 +21,20 @@
         <div id="app">
             <v-app>
 
-                <v-app-bar flat></v-app-bar>
+                <v-app-bar flat class="pl-16 pr-16">
+                    <v-app-bar-title>2024 General Election of Ghana</v-app-bar-title>
+                    <template v-slot:append>
+                        <v-btn active-color="" color="" to="/sissala-east">Sisala East</v-btn>
+                        <v-btn color="">Sisala West</v-btn>
+
+                        <record-component></record-component>
+                    </template>
+                </v-app-bar>
+
                 <v-main>
-
-
+                    <v-container>
+                        <router-view></router-view>
+                    </v-container>
                 </v-main>
 
             </v-app>

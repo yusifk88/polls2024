@@ -13,10 +13,11 @@ return new class extends Migration {
         Schema::create('polling_stations', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('constituency_id');
+            $table->unsignedBigInteger("community_id");
             $table->string('code')->unique();
             $table->string('name');
             $table->text('details')->nullable();
-            $table->timestamps();
+              $table->timestamps();
         });
     }
 

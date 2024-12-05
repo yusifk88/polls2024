@@ -12,8 +12,8 @@ return new class extends Migration {
     {
         Schema::create('candidates', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('party_id');
-            $table->unsignedBigInteger('constituency_id');
+            $table->unsignedBigInteger('party_id')->nullable();
+            $table->unsignedBigInteger('constituency_id')->nullable();
             $table->string('name');
             $table->string('type')->default("mp");
             $table->text('photo_url')->nullable();

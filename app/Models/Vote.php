@@ -8,5 +8,5 @@ class Vote extends Model
 {
     protected $table = 'votes';
 
-    protected $fillable = ["votes","polling_station_id","constituency_id"];
+    protected $fillable = ["votes","polling_station_id","constituency_id","candidate_id","community_id"];
 }

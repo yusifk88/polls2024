@@ -14,9 +14,13 @@ return new class extends Migration {
             $table->id();
             $table->bigInteger("votes");
             $table->unsignedBigInteger("polling_station_id");
+            $table->unsignedBigInteger("candidate_id");
             $table->unsignedBigInteger("constituency_id");
+            $table->unsignedBigInteger("community_id");
             $table->index("polling_station_id");
             $table->index("constituency_id");
+            $table->index("candidate_id");
+            $table->index("community_id");
             $table->timestamps();
         });
     }
