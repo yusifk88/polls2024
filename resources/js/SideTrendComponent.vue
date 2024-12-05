@@ -6,31 +6,23 @@
                 <v-text-field v-model="search" placeholder="Search..."></v-text-field>
 
         </v-list-item>
-        <v-list-item lines="two" class="border-t rounded-0" style="border-radius: 0!important;"
-                     :style="'background-color:'+ findLeader(item.candidate_votes)[0].party.color_code"
-                     v-for="item in filtered">
+    <side-item-component
+    v-for="item in filtered"
+    :key="item.id"
+    :item="item"
+    ></side-item-component>
 
-            <v-list-item-title class="text-white">{{ item.name }}</v-list-item-title>
-            <v-list-item-subtitle class="text-white" style="opacity: 1">
-                {{ toMoney(findLeader(item.candidate_votes)[0].total_votes) }}Votes - {{percentage(findLeader(item.candidate_votes))}}%
-            </v-list-item-subtitle>
-            <template v-slot:append>
-                <v-avatar>
-                    <v-img :src="findLeader(item.candidate_votes)[0].photo_url"></v-img>
-                </v-avatar>
-                <p class="text-white">
-                    {{ findLeader(item.candidate_votes)[0].name.includes("Chinnia") ? 'Chi.' : 'Bat.' }}</p>
-            </template>
-        </v-list-item>
     </v-list>
 </template>
 
 <script>
 import {toMoney} from "./untils/formatters.js";
 import {th} from "vuetify/locale";
+import SideItemComponent from "./SideItemComponent.vue";
 
 export default {
     name: "SideTrendComponent",
+    components: {SideItemComponent},
     props: {
         items: {
             type: Array

@@ -1,7 +1,7 @@
 <template>
-    <v-card>
+    <v-card class="community-card">
         <v-card-title>
-            <v-icon>mdi-map-marker</v-icon>
+            <v-icon>mdi-map-marker-outline</v-icon>
             {{ item.name }}
         </v-card-title>
         <v-card-text>
@@ -62,6 +62,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.community-card{
+ transition:0.3s ease-in-out;
+}
+.community-card:hover{
+    background-color: #00808024;
+    border:none;
+}
 
 </style>

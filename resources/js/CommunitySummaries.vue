@@ -2,16 +2,25 @@
 
     <h1 class="mt-8 text-h5">Community summaries</h1>
 
+<center>
+
     <apexchart
         v-if="firstCommunity"
         type="donut"
-        width="500px"
+        width="450px"
+        class="mx-auto"
         :options="chartOptions"
         :series="series"></apexchart>
+</center>
 
-    <p class="text-h6">Top 10 deciders</p>
 
-    <v-row>
+    <h1 class="text-h2 mb-4 mt-4">{{toMoney(total_votes)}} Total votes</h1>
+
+
+
+    <p class="text-h6">Breakdown</p>
+
+    <v-row dense>
         <v-col cols="12" v-for="item in sortedCommunities" :key="item.id">
             <community-card-component :item="item"></community-card-component>
         </v-col>
@@ -24,6 +33,7 @@
 <script>
 
 import CommunityCardComponent from "./CommunityCardComponent.vue";
+import {toMoney} from "./untils/formatters.js";
 
 export default {
     name: "CommunitySummaries",
@@ -31,6 +41,9 @@ export default {
     props: {
         communities: {
             type: Array
+        },
+        total_votes:{
+
         }
     },
     data() {
@@ -135,6 +148,7 @@ export default {
         }
     },
     methods: {
+        toMoney,
 
 
         findCandidate(candidates, name) {

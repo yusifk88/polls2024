@@ -63,7 +63,7 @@
                 <v-col cols="12">
                     <v-row>
                         <v-col cols="12">
-                            <community-summaries :communities="communities"></community-summaries>
+                            <community-summaries :total_votes="total_Votes" :communities="communities"></community-summaries>
                         </v-col>
                     </v-row>
 

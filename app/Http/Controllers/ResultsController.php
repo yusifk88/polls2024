@@ -13,6 +13,30 @@ use Illuminate\Http\Request;
 class ResultsController extends Controller
 {
 
+
+    public function communityDetails(int $id)
+    {
+
+        $community = Community::find($id);
+        if ($community) {
+
+            $total_votes = Vote::where("community_id", $id)->sum('votes');
+            $polling_stations = PollingStation::with("constituency.candidates.votes")->with("constituency.candidates.party")->where("community_id", $id)->get();
+
+
+            return response()->json([
+                "total_votes" => $total_votes,
+                "polling_stations" => $polling_stations,
+                "community" => $community,
+            ]);
+
+        }
+        return response()->json(["message" => "Community Not Found!"], 404);
+
+
+    }
+
+
     public function recordPM(Request $request)
     {
         $request->validate([
@@ -84,7 +108,7 @@ class ResultsController extends Controller
 
             $communities = Community::query()->with("constituency.candidates.party")
                 ->with("constituency.candidates")
-                ->whereIn("id",Vote::select("community_id"))
+                ->whereIn("id", Vote::select("community_id"))
                 ->where("constituency_id", $place->id)->get();
 
             $total_votes = Vote::query()->where("constituency_id", $place->id)->sum("votes");

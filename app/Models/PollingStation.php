@@ -21,6 +21,12 @@ class PollingStation extends Model
         return $this->belongsTo(Community::class);
     }
 
+
+    public function constituency(){
+
+        return $this->belongsTo(Constituency::class);
+    }
+
     public static function renameFile()
     {
         $files = Storage::disk('public')->files("SISSALAEAST");
