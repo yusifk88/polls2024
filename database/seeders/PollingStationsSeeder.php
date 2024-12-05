@@ -20,7 +20,7 @@ class PollingStationsSeeder extends Seeder
         $list = [
             [
                 "Code" => "P110101A",
-                "Name" => "BUJANPRIMARYSCHOOL",
+                "Name" => "BUJAN RIMARY SCHOOL",
                 "Description" => "BUJAN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -28,7 +28,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110101B",
-                "Name" => "BUJAN CHALLU PRIMARY",
+                "Name" => "BUJAN PRIMARY SCHOOL",
                 "Description" => "BUJAN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -36,23 +36,23 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110102",
-                "Name" => "NABUGUBELLE CHALLU PRIM.",
+                "Name" => "NABUGUBELLE PRIM.",
                 "Description" => "NABUGUBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
-                "Community" => "NABUGUBELLE"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110103",
-                "Name" => "NABUGUBELLE PIEN PRIM.",
+                "Name" => "NABUGUBELLE PRIM.",
                 "Description" => "NABUGUBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
-                "Community" => "NABUGUBELLE"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110104",
-                "Name" => "NANCHALA PIEN PRIM.",
+                "Name" => "NANCHALA PRIM.",
                 "Description" => "NANCHALA",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -60,7 +60,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110105",
-                "Name" => "TAFFIASI KWAPUN PRIMARY",
+                "Name" => "TAFFIASI PRIMARY",
                 "Description" => "TAFFIASI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -68,55 +68,55 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110201A",
-                "Name" => "CHALLU WURU PRIM",
+                "Name" => "CHALLU PRIM",
                 "Description" => "CHALLU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
-                "Community" => "CHALLU"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110201B",
-                "Name" => "CHALLU PINA PRIM",
+                "Name" => "CHALLU PRIM",
                 "Description" => "CHALLU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
-                "Community" => "CHALLU"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110202A",
-                "Name" => "CHALLU BANU PRIM",
+                "Name" => "CHALLU PRIM",
                 "Description" => "CHALLU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
-                "Community" => "CHALLU"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110202B",
-                "Name" => "CHALLU BASSISAN PRIM",
+                "Name" => "CHALLU PRIM",
                 "Description" => "CHALLU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
-                "Community" => "CHALLU"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110203",
-                "Name" => "PIEN KUNCHUGU PRIMARY",
+                "Name" => "PIEN PRIMARY",
                 "Description" => "PIEN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
-                "Community" => "PIEN"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110204",
-                "Name" => "PIEN DOLIBIZON PRIMARY",
+                "Name" => "PIEN PRIMARY",
                 "Description" => "PIEN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
-                "Community" => "PIEN"
+                "Community" => "CHALLU/PIEN"
             ],
             [
                 "Code" => "P110301",
-                "Name" => "KWAPUN YIGANTU PRIMARY",
+                "Name" => "KWAPUN PRIMARY",
                 "Description" => "KWAPUN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -228,7 +228,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110603",
-                "Name" => "TB SAKAI KATINIA",
+                "Name" => "TB KATINIA",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -236,7 +236,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110604",
-                "Name" => "TB SAKAI NAVROWIE",
+                "Name" => "TB NAVROWIE",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -244,7 +244,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110605",
-                "Name" => "TB SAKAI TANLA",
+                "Name" => "TB TANLA",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -252,7 +252,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110606",
-                "Name" => "TB SAKAI TANVIEL",
+                "Name" => "TB TANVIEL",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -260,7 +260,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110607",
-                "Name" => "TB NANKPAWIE NITALU",
+                "Name" => "TB NANKPAWIE",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -268,7 +268,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110608",
-                "Name" => "CHINCHAN LILIXIA PRIM.",
+                "Name" => "CHINCHAN PRIM.",
                 "Description" => "CHINCHAN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -276,7 +276,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110609",
-                "Name" => "TB TB KUNSOLA",
+                "Name" => "TB KUNSOLA",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -284,7 +284,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110701A",
-                "Name" => "SAKAI KONG PRIMARY",
+                "Name" => "SAKAI PRIMARY",
                 "Description" => "SAKAI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -292,7 +292,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110701B",
-                "Name" => "SAKAI DANGI PRIMARY",
+                "Name" => "SAKAI PRIMARY",
                 "Description" => "SAKAI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -300,7 +300,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110702A",
-                "Name" => "SAKAI TB PRIMARY",
+                "Name" => "SAKAI PRIMARY",
                 "Description" => "SAKAI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -308,7 +308,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110702B",
-                "Name" => "SAKAI KOWIE PRIMARY",
+                "Name" => "SAKAI PRIMARY",
                 "Description" => "SAKAI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -316,7 +316,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110703",
-                "Name" => "NANKPAWIE TB PRIM.",
+                "Name" => "NANKPAWIE PRIM.",
                 "Description" => "NANKPAWIE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -324,7 +324,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110704",
-                "Name" => "LILIXIA HALAMBOI PRIMARY",
+                "Name" => "LILIXIA PRIMARY",
                 "Description" => "LILIXIA",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -332,7 +332,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110705",
-                "Name" => "TB SAKALU NAHADAKUI",
+                "Name" => "TB NAHADAKUI",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -340,7 +340,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110801",
-                "Name" => "KONG SAKALU PRIMARY",
+                "Name" => "KONG PRIMARY",
                 "Description" => "KONG",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -348,7 +348,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110802",
-                "Name" => "DANGI JIJEN PRIMARY",
+                "Name" => "DANGI PRIMARY",
                 "Description" => "DANGI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -356,7 +356,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110803",
-                "Name" => "TB SENTIE BAKUALA",
+                "Name" => "TB BAKUALA",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -364,7 +364,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110804",
-                "Name" => "KOWIE BENDEI PRIMARY",
+                "Name" => "KOWIE PRIMARY",
                 "Description" => "KOWIE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -372,7 +372,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110805",
-                "Name" => "TB TB BALOLO",
+                "Name" => "TB BALOLO",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "KONG",
@@ -380,7 +380,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110806",
-                "Name" => "HALAMBOI WELLEMBELLE MARKET",
+                "Name" => "HALAMBOI MARKET",
                 "Description" => "HALAMBOI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "CENTRE",
@@ -388,7 +388,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110901A",
-                "Name" => "SAKALU WELLEMBELLE PRIMARY",
+                "Name" => "SAKALU PRIMARY",
                 "Description" => "SAKALU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -396,7 +396,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110901B",
-                "Name" => "SAKALU WELLEMBELLE PRIMARY",
+                "Name" => "SAKALU PRIMARY",
                 "Description" => "SAKALU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
@@ -404,7 +404,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110902",
-                "Name" => "JIJEN WELLEMBELLE PRIMARY",
+                "Name" => "JIJEN PRIMARY",
                 "Description" => "JIJEN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -412,7 +412,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110903",
-                "Name" => "SENTIE WELLEMBELLE PRIMARY",
+                "Name" => "SENTIE PRIMARY",
                 "Description" => "SENTIE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -420,7 +420,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110904",
-                "Name" => "BENDEI DAGBASU PRIMARY",
+                "Name" => "BENDEI PRIMARY",
                 "Description" => "BENDEI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -428,7 +428,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110905",
-                "Name" => "TB DAGBASU TIMBAKA",
+                "Name" => "TB TIMBAKA",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -444,7 +444,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111001B",
-                "Name" => "WELLEMBELLE BUGUBELLE PRIM.",
+                "Name" => "WELLEMBELLE PRIM.",
                 "Description" => "WELLEMBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -452,7 +452,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111002",
-                "Name" => "WELLEMBELLE BUGUBELLE JHS",
+                "Name" => "WELLEMBELLE JHS",
                 "Description" => "WELLEMBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "",
@@ -460,7 +460,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111003A",
-                "Name" => "WELLEMBELLE BUGUBELLE JHS",
+                "Name" => "WELLEMBELLE JHS",
                 "Description" => "WELLEMBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "",
@@ -468,7 +468,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111003B",
-                "Name" => "WELLEMBELLE BUGUBELLE JHS",
+                "Name" => "WELLEMBELLE JHS",
                 "Description" => "WELLEMBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "",
@@ -476,7 +476,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111004",
-                "Name" => "DAGBASU VAMBOI PRIMARY",
+                "Name" => "DAGBASU PRIMARY",
                 "Description" => "DAGBASU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -484,7 +484,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111005",
-                "Name" => "DAGBASU VAMBOI CENTRAL",
+                "Name" => "DAGBASU CENTRAL",
                 "Description" => "DAGBASU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "MOSQUE",
@@ -492,7 +492,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111006",
-                "Name" => "TB KULFUO WAHABU",
+                "Name" => "TB KULFUO",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -500,7 +500,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111101A",
-                "Name" => "BUGUBELLE KULFUO PRIMARY",
+                "Name" => "BUGUBELLE PRIMARY",
                 "Description" => "BUGUBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -508,7 +508,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111101B",
-                "Name" => "BUGUBELLE TARSOR PRIMARY",
+                "Name" => "BUGUBELLE PRIMARY",
                 "Description" => "BUGUBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -516,7 +516,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111102A",
-                "Name" => "BUGUBELLE TARSOR PRIMARY",
+                "Name" => "BUGUBELLE PRIMARY",
                 "Description" => "BUGUBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -524,7 +524,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111102B",
-                "Name" => "BUGUBELLE MWANDUANU PRIMARY",
+                "Name" => "BUGUBELLE PRIMARY",
                 "Description" => "BUGUBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -532,7 +532,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111103A",
-                "Name" => "VAMBOI MWANDUANU DAYCARE",
+                "Name" => "VAMBOI DAYCARE",
                 "Description" => "VAMBOI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -540,7 +540,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111103B",
-                "Name" => "VAMBOI MWANDUANU DAYCARE",
+                "Name" => "VAMBOI DAYCARE",
                 "Description" => "VAMBOI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -548,39 +548,39 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111201",
-                "Name" => "KULFUO KUROBOI PRIMARY",
+                "Name" => "KULFUO PRIMARY",
                 "Description" => "KULFUO",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
-                "Community" => "KULFUO"
+                "Community" => "KULFUO/TARSOR"
             ],
             [
                 "Code" => "P111202",
-                "Name" => "KULFUO BUCHEMBOI HEALTH",
+                "Name" => "KULFUO HEALTH",
                 "Description" => "KULFUO",
                 "Constituency" => "SISSALA EAST",
                 "District" => "CENTRE",
-                "Community" => "KULFUO"
+                "Community" => "KULFUO/TARSOR"
             ],
             [
                 "Code" => "P111203A",
-                "Name" => "TARSOR TUMU PRIMARY",
+                "Name" => "TARSOR PRIMARY",
                 "Description" => "TARSOR",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
-                "Community" => "TARSOR"
+                "Community" => "KULFUO/TARSOR"
             ],
             [
                 "Code" => "P111203B",
-                "Name" => "TARSOR TUMU PRIMARY",
+                "Name" => "TARSOR PRIMARY",
                 "Description" => "TARSOR",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH.",
-                "Community" => "TARSOR"
+                "Community" => "KULFUO/TARSOR"
             ],
             [
                 "Code" => "P111301A",
-                "Name" => "MWANDUANU TUMU PRIM.",
+                "Name" => "MWANDUANU PRIM.",
                 "Description" => "MWANDUANU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -588,7 +588,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111301B",
-                "Name" => "MWANDUANU TUMU PRIM.",
+                "Name" => "MWANDUANU PRIM.",
                 "Description" => "MWANDUANU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -596,7 +596,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111302",
-                "Name" => "MWANDUANU TUMU PRIM.",
+                "Name" => "MWANDUANU PRIM.",
                 "Description" => "MWANDUANU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -604,7 +604,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111303",
-                "Name" => "KUROBOI TUMU PRIM.",
+                "Name" => "KUROBOI PRIM.",
                 "Description" => "KUROBOI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -612,7 +612,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111304",
-                "Name" => "BUCHEMBOI TUMU PRIM.",
+                "Name" => "BUCHEMBOI PRIM.",
                 "Description" => "BUCHEMBOI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -620,7 +620,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111401A",
-                "Name" => "TUMU TUMU SEC.",
+                "Name" => "TUMU SEC.",
                 "Description" => "TUMU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "TECH.",
@@ -628,7 +628,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111401B",
-                "Name" => "TUMU ASSEMBLY SEC.",
+                "Name" => "TUMU SEC.",
                 "Description" => "TUMU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "TECH.",
@@ -692,7 +692,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111602",
-                "Name" => "TB CENTRAL CENTRAL",
+                "Name" => "TB CENTRAL",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "BOREHOLE",
@@ -708,7 +708,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111702",
-                "Name" => "UNITED NABULO PRIMARY",
+                "Name" => "UNITED PRIMARY",
                 "Description" => "UNITED",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -716,15 +716,15 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111703",
-                "Name" => "FALAHIA FACHOBOI PRIMARY",
+                "Name" => "FALAHIA PRIMARY",
                 "Description" => "FALAHIA",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
-                "Community" => "FACHOBOI"
+                "Community" => "TUMU"
             ],
             [
                 "Code" => "P111704",
-                "Name" => "BAPTIST NABULO MISSION",
+                "Name" => "BAPTIST MISSION HOUSE",
                 "Description" => "BAPTIST",
                 "Constituency" => "SISSALA EAST",
                 "District" => "HOUSE",
@@ -732,7 +732,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111801A",
-                "Name" => "CENTRAL NABULO AHMADIYA",
+                "Name" => "NABULO AHMADIYA",
                 "Description" => "CENTRAL",
                 "Constituency" => "SISSALA EAST",
                 "District" => "MOSQUE",
@@ -740,7 +740,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111801B",
-                "Name" => "CENTRAL BAWIASIBELLE AHMADIYA",
+                "Name" => "BAWIASIBELLE AHMADIYA",
                 "Description" => "CENTRAL",
                 "Constituency" => "SISSALA EAST",
                 "District" => "MOSQUE",
@@ -748,7 +748,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111802",
-                "Name" => "CENTRAL BAWIASIBELLE AHMADIYA",
+                "Name" => "BAWIASIBELLE AHMADIYA",
                 "Description" => "CENTRAL",
                 "Constituency" => "SISSALA EAST",
                 "District" => "MOSQUE",
@@ -756,7 +756,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111803",
-                "Name" => "NANYUOBELIIN DUU SISSALA",
+                "Name" => "NANYUOBELIIN",
                 "Description" => "NANYUOBELIIN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "EAST",
@@ -764,7 +764,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111901",
-                "Name" => "NABULO KOMO PRIMARY",
+                "Name" => "NABULO PRIMARY",
                 "Description" => "NABULO",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -772,7 +772,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111902",
-                "Name" => "FACHOBOI SANTIJAN PRIMARY",
+                "Name" => "FACHOBOI PRIMARY",
                 "Description" => "FACHOBOI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -780,7 +780,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111903A",
-                "Name" => "NABULO GUOSI TEACHERS",
+                "Name" => "NABULO TEACHERS QUARTERS",
                 "Description" => "NABULO",
                 "Constituency" => "SISSALA EAST",
                 "District" => "QUARTERS",
@@ -788,7 +788,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P111903B",
-                "Name" => "NABULO GUOSI TEACHERS",
+                "Name" => "NABULO TEACHERS QUARTERS",
                 "Description" => "NABULO",
                 "Constituency" => "SISSALA EAST",
                 "District" => "QUARTERS",
@@ -796,7 +796,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112001A",
-                "Name" => "BAWIASIBELLE GBENEWISE PRIMARY",
+                "Name" => "BAWIASIBELLE PRIMARY",
                 "Description" => "BAWIASIBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -804,7 +804,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112001B",
-                "Name" => "BAWIASIBELLE KALAXSI PRIMARY",
+                "Name" => "BAWIASIBELLE PRIMARY",
                 "Description" => "BAWIASIBELLE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -812,7 +812,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112002",
-                "Name" => "DUU TUMU  PRIMARY",
+                "Name" => "TUMU  PRIMARY",
                 "Description" => "DUU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -820,7 +820,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112003",
-                "Name" => "KOMO  PRIMARY",
+                "Name" => "KOMO PRIMARY",
                 "Description" => "KOMO",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -828,7 +828,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112101",
-                "Name" => "SANTIJAN  PRIMARY",
+                "Name" => "SANTIJAN PRIMARY",
                 "Description" => "SANTIJAN",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -836,7 +836,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112102",
-                "Name" => "GUOSI  UPPER",
+                "Name" => "GUOSI UPPER PRIMARY",
                 "Description" => "GUOSI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "PRIMARY",
@@ -844,7 +844,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112103",
-                "Name" => "GUOSI  LOWER",
+                "Name" => "GUOSI LOWER PRIMARY",
                 "Description" => "GUOSI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "JHS",
@@ -852,7 +852,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112104",
-                "Name" => "GBENEWISE  PRIMARY",
+                "Name" => "GBENEWISE PRIMARY",
                 "Description" => "GBENEWISE",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -860,7 +860,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P112105",
-                "Name" => "KALAXSI  PRIMARY",
+                "Name" => "KALAXSI PRIMARY",
                 "Description" => "KALAXSI",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -868,7 +868,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P1101SPS",
-                "Name" => "TUMU   POLICE STATION",
+                "Name" => "TUMU POLICE STATION",
                 "Description" => "TUMU ",
                 "Constituency" => "SISSALA EAST",
                 "District" => "STATION",

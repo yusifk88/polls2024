@@ -2,10 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Constituency;
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,11 +20,13 @@ class DatabaseSeeder extends Seeder
 //            'email' => 'test@example.com',
 //        ]);
 
-//        $this->call(ConstituenciesSeeder::class);
-//        $this->call(PartySeeder::class);
-//        $this->call(CandidateSeeder::class);
+        $this->call(ConstituenciesSeeder::class);
+        $this->call(PartySeeder::class);
+        $this->call(CandidateSeeder::class);
         $this->call(CommunitySeeder::class);
-         $this->call(PollingStationsSeeder::class);
+        $this->call(CommunitySWSeeder::class);
+        $this->call(PollingStationsSeeder::class);
+        $this->call(PollingSWSeeder::class);
 
 
     }
