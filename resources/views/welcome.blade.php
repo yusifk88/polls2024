@@ -23,10 +23,12 @@
 
                 <v-app-bar flat class="pl-16 pr-16">
                     <v-app-bar-title>2024 General Election of Ghana</v-app-bar-title>
-                    <template v-slot:append>
-                        <v-btn active-color="" color="" to="/sissala-east">Sisala East</v-btn>
-                        <v-btn color="">Sisala West</v-btn>
 
+                        <v-btn active-color="" color="" to="/sissala-east">Sisala East</v-btn>
+                        <v-btn color="" to="/sissala-west">Sisala West</v-btn>
+
+
+                    <template v-slot:append>
                         <record-component></record-component>
                     </template>
                 </v-app-bar>

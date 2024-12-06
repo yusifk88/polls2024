@@ -17,9 +17,9 @@
                          </v-avatar>
                      </template>
                      <v-list-item-title>{{ item.name }}</v-list-item-title>
-                     <v-list-item-subtitle class="text-h5 mt-2">{{ toMoney(sumVotes(item.votes)) }} Votes</v-list-item-subtitle>
+                     <v-list-item-subtitle class="text-h5 mt-2">{{ toMoney(sumVotes(station.id,item.votes)) }} Votes</v-list-item-subtitle>
                      <v-list-item-subtitle>
-                         <v-progress-linear :model-value="percent(sumVotes(item.votes),sumCandidates(station.constituency.candidates))" class="mt-2" height="20" :color="item.party.color_code"></v-progress-linear>
+                         <v-progress-linear :model-value="percent(sumVotes(station.id,item.votes),sumCandidates(station.id,station.constituency.candidates))" class="mt-2" height="20" :color="item.party.color_code"></v-progress-linear>
                      </v-list-item-subtitle>
                  </v-list-item>
 
@@ -49,12 +49,12 @@ export default {
     methods: {
         toMoney,
 
-        sumCandidates(candidates) {
+        sumCandidates(station_id,candidates) {
 
             let sum = 0;
 
             candidates.forEach(candidates=>{
-                sum+=this.sumVotes(candidates.votes)
+                sum+=this.sumVotes(station_id,candidates.votes)
             })
 
 
@@ -66,12 +66,15 @@ export default {
             return sum > 0 ? ((Number(votes) / Number(sum)) * 100).toFixed(2) : 0;
 
         },
-        sumVotes(votes) {
+        sumVotes(station_id,votes) {
             let sum = 0;
-
-            votes.forEach(item => {
-                sum += Number(item.votes)
-            })
+            if (votes) {
+                votes.forEach(item => {
+                    if (station_id === item.polling_station_id) {
+                        sum += Number(item.votes)
+                    }
+                })
+            }
 
             return sum;
         },

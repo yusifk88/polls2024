@@ -39,6 +39,10 @@ export default {
     name: "CommunitySummaries",
     components: {CommunityCardComponent},
     props: {
+        from:{
+          type:String,
+          default:"east"
+        },
         communities: {
             type: Array
         },
@@ -76,10 +80,12 @@ export default {
         series() {
             let setOne = 0;
             let settwo = 0;
+            let setthree = 0;
 
             this.communities.forEach(item => {
 
 
+                if (this.from=='east'){
                 if (Number(this.findCandidate(item.candidate_votes, "Amidu Chinnia Issahaku").total_votes) < Number(this.findCandidate(item.candidate_votes, "Issah Mohamed Bataglia").total_votes)) {
 
                     setOne++;
@@ -87,6 +93,18 @@ export default {
                 } else {
 
                     settwo++;
+                }
+                }else {
+
+                    if (Number(this.findCandidate(item.candidate_votes, "Mohammed Adams Supkaru").total_votes) > Number(this.findCandidate(item.candidate_votes, "Salifu Naliwie Baliwie").total_votes)) {
+
+                        setOne++;
+
+                    } else {
+
+                        settwo++;
+                    }
+
                 }
 
             })
@@ -103,7 +121,24 @@ export default {
             this.firstCommunity.candidate_votes.forEach(item => {
                 list.push(item.party.color_code);
 
-                labels.push(item.name.toLowerCase().includes("chinnia") ? "Chinnia" : "Bataglia")
+                if (this.from=='east') {
+                    labels.push(item.name.toLowerCase().includes("chinnia") ? "Chinnia" : "Bataglia")
+                }else {
+
+
+                    if (item.name.toLowerCase().includes("supkaru")){
+                        labels.push("Supkaru");
+                    }
+
+                    if (item.name.toLowerCase().includes("naliwie")){
+                        labels.push("Naliwie");
+                    }
+
+                    if (item.name.toLowerCase().includes("yussif")){
+                        labels.push("Yussif");
+                    }
+
+                }
             })
 
             return {
@@ -128,7 +163,7 @@ export default {
                 tooltip: {
                     y: {
                         formatter: function (val) {
-                            return "Won in " + val + " communities"
+                            return "Won in " + val + " electoral areas"
                         }
                     }
                 },
@@ -161,7 +196,6 @@ export default {
     mounted() {
 
 
-        console.log(this.sortedCommunities);
     }
 }
 </script>

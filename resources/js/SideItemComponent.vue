@@ -12,8 +12,14 @@
             <v-avatar>
                 <v-img :src="findLeader(item.candidate_votes)[0].photo_url"></v-img>
             </v-avatar>
-            <p class="text-white">
+
+            <p class="text-white" v-if="from=='east'">
                 {{ findLeader(item.candidate_votes)[0].name.includes("Chinnia") ? 'Chi.' : 'Bat.' }}</p>
+
+            <p class="text-white" v-else>
+                {{ findLeader(item.candidate_votes)[0].name.includes("Supkaru") ? 'Sup.' : 'Nal.' }}</p>
+
+
         </template>
     </v-list-item>
     <v-dialog scrollable fullscreen v-model="showDialog">
@@ -33,17 +39,16 @@
 <script>
 import {toMoney} from "./untils/formatters.js";
 import CommunityDetailsComponent from "./CommunityDetailsComponent.vue";
-import {it} from "vuetify/locale";
 
 export default {
     name: "SideItemComponent",
-    computed: {
-        it() {
-            return it
-        }
-    },
+
     components: {CommunityDetailsComponent},
     props:{
+        from:{
+          type:String,
+          default:"east"
+        },
         item:{
             type:Object
         }

@@ -1,6 +1,5 @@
 <template>
 <span>
-    <h1 class="text-h4">Sissala East Constituency</h1>
 
     <v-tabs>
         <v-tab to="/sissala-east">Parliamentary</v-tab>

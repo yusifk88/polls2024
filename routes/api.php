@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 //})->middleware('auth:sanctum');
 
 Route::get("/mp-results/sissala-east", [ResultsController::class, 'mpSEIndex']);
+Route::get("/mp-results/sissala-west", [ResultsController::class, 'mpSWIndex']);
 Route::get("constituencies", [ResultsController::class, 'constituencies']);
 Route::get("candidates", [ResultsController::class, 'candidates']);
 Route::get("community/{id}", [ResultsController::class, 'communityDetails']);

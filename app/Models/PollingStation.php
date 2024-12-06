@@ -17,7 +17,10 @@ class PollingStation extends Model
     protected $fillable = ["constituency_id", "community_id", "code", "name", "details"];
 
 
-    public function community(){
+    public function votes(){
+        return $this->hasMany(Vote::class);
+    }
+ public function community(){
         return $this->belongsTo(Community::class);
     }
 

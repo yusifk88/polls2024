@@ -29,9 +29,10 @@
                     </v-btn>
                 </v-btn-toggle>
 
-                <v-form class="mt-3">
+                <v-form class="mt-3" ref="recordForm">
                     <v-label>Polling Station</v-label>
                     <v-autocomplete
+                        :rules="rules"
                         :items="filteredStations"
                         item-value="id"
                         v-model="poling_station_id"
@@ -41,24 +42,24 @@
                     >
                         <template v-slot:item="{item, props}">
                             <v-list-item v-bind="props">
-                                <v-list-item-title>{{item.name}}</v-list-item-title>
-                                <v-list-item-subtitle>{{item.raw.code}}</v-list-item-subtitle>
-                                <v-list-item-subtitle>{{item.raw.community.name}}</v-list-item-subtitle>
+                                <v-list-item-title>{{ item.name }}</v-list-item-title>
+                                <v-list-item-subtitle>{{ item.raw.code }}</v-list-item-subtitle>
+                                <v-list-item-subtitle>{{ item.raw.community.name }}</v-list-item-subtitle>
 
                             </v-list-item>
                         </template>
 
                         <template v-slot:selection="{item, props}">
                             <v-list-item v-bind="props">
-                                <v-list-item-title>{{item.raw.name}}</v-list-item-title>
-                                <v-list-item-subtitle>{{item.raw.code}}</v-list-item-subtitle>
-                                <v-list-item-subtitle>{{item.raw.community.name}}</v-list-item-subtitle>
+                                <v-list-item-title>{{ item.raw.name }}</v-list-item-title>
+                                <v-list-item-subtitle>{{ item.raw.code }}</v-list-item-subtitle>
+                                <v-list-item-subtitle>{{ item.raw.community.name }}</v-list-item-subtitle>
                             </v-list-item>
                         </template>
                     </v-autocomplete>
 
                     <v-label>Candidate</v-label>
-                    <v-autocomplete v-model="candidate_id" :items="filteredCondidates" item-title="name"
+                    <v-autocomplete :rules="rules" v-model="candidate_id" :items="filteredCondidates" item-title="name"
                                     item-value="id">
                         <template v-slot:item="{item,props}">
                             <v-list-item v-bind="props">
@@ -99,22 +100,21 @@
                     </v-autocomplete>
 
                     <v-label>Votes</v-label>
-                    <v-text-field type="number" v-model="votes" min="0"></v-text-field>
+                    <v-text-field :rules="rules" type="number" v-model="votes" min="0"></v-text-field>
 
                 </v-form>
 
             </v-card-text>
             <v-card-actions>
-                <v-btn variant="flat" block @click="save">Save</v-btn>
+                <v-btn variant="flat" :loading="saving" block @click="save">Save</v-btn>
             </v-card-actions>
         </v-card>
     </v-dialog>
 
+    <v-snackbar :color="alertColor" v-model="showAlert">{{ alertText }}</v-snackbar>
 </template>
 
 <script>
-import {da} from "vuetify/locale";
-
 export default {
     name: "RecordComponent",
     data() {
@@ -125,8 +125,20 @@ export default {
             toggle: 'east',
             candidate_id: null,
             pStations: [],
-            poling_station_id:null,
-            votes:0
+            poling_station_id: null,
+            votes: 0,
+            alertColor: "green",
+            alertText: "",
+            showAlert: false,
+            saving: false,
+            rules: [
+                value => {
+                    if (value) return true
+
+                    return 'This is required.'
+                },
+            ],
+
         }
     },
     computed: {
@@ -160,22 +172,39 @@ export default {
     },
     methods: {
 
-        save(){
+       async save() {
 
-            const data = {
-                polling_station_id:this.poling_station_id,
-                votes:this.votes,
-                candidate_id:this.candidate_id
-            };
+            const {valid} = await this.$refs.recordForm.validate();
 
-           axios.post("/api/record-pm",data)
-               .then(res=>{
-                   console.log(res.data);
-                   this.poling_station_id=null;
-                   this.votes=0;
-                   this.candidate_id=null;
-               })
+            if (valid) {
 
+                this.saving = true;
+
+                const data = {
+                    polling_station_id: this.poling_station_id,
+                    votes: this.votes,
+                    candidate_id: this.candidate_id
+                };
+
+                axios.post("/api/record-pm", data)
+                    .then(res => {
+                        this.poling_station_id = null;
+                        this.votes = 0;
+                        this.candidate_id = null;
+                        this.alertColor = "green";
+                        this.alertText = "Record saved";
+                        this.showAlert = true;
+                        this.saving = false;
+                    })
+                    .catch(error => {
+
+                        this.saving = false;
+                        this.alertText = error.response.data.message ? error.response.data.message : "Something went wrong, try again";
+                        this.alertColor = "error";
+                        this.showAlert = true;
+                    })
+
+            }
 
         },
 

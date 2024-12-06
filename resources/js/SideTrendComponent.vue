@@ -1,12 +1,13 @@
 <template>
 
     <v-list>
-        <v-list-subheader>Voter domination by community</v-list-subheader>
+        <v-list-subheader>Voter domination by {{from=="east" ?  "community" : "electoral area" }}</v-list-subheader>
         <v-list-item>
                 <v-text-field v-model="search" placeholder="Search..."></v-text-field>
 
         </v-list-item>
     <side-item-component
+        :from="from"
     v-for="item in filtered"
     :key="item.id"
     :item="item"
@@ -17,13 +18,16 @@
 
 <script>
 import {toMoney} from "./untils/formatters.js";
-import {th} from "vuetify/locale";
 import SideItemComponent from "./SideItemComponent.vue";
 
 export default {
     name: "SideTrendComponent",
     components: {SideItemComponent},
     props: {
+        from:{
+            type:String,
+            default:"east"
+        },
         items: {
             type: Array
         },

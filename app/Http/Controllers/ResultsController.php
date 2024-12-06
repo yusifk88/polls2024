@@ -21,12 +21,13 @@ class ResultsController extends Controller
         if ($community) {
 
             $total_votes = Vote::where("community_id", $id)->sum('votes');
-            $polling_stations = PollingStation::with("constituency.candidates.votes")->with("constituency.candidates.party")->where("community_id", $id)->get();
+            $polling_stations = PollingStation::with("constituency.candidates.votes")->withSum("votes", "votes")->with("constituency.candidates.party")->where("community_id", $id)->get();
 
+            $list = $polling_stations->where("votes_sum_votes", ">", 0);
 
             return response()->json([
                 "total_votes" => $total_votes,
-                "polling_stations" => $polling_stations,
+                "polling_stations" => $list,
                 "community" => $community,
             ]);
 
@@ -44,6 +45,12 @@ class ResultsController extends Controller
             "candidate_id" => "required|integer|exists:candidates,id",
             "votes" => "required|integer|min:1",
         ]);
+
+
+        if (Vote::where("candidate_id", $request->candidate_id)->where("polling_station_id", $request->polling_station_id)->exists()) {
+            return response()->json(["message" => "Record already exists"], 422);
+        }
+
 
         $station = PollingStation::find($request->polling_station_id);
 
@@ -97,6 +104,41 @@ class ResultsController extends Controller
     {
 
         $place = Constituency::where("name", "Sissala East")->first();
+
+        if ($place) {
+            $MPs = Candidate::query()->withSum("votes", "votes")
+                ->with("party")
+                ->with("constituency")
+                ->where("constituency_id", $place->id)
+                ->orderBy("name")
+                ->get();
+
+            $communities = Community::query()->with("constituency.candidates.party")
+                ->with("constituency.candidates")
+                ->whereIn("id", Vote::select("community_id"))
+                ->where("constituency_id", $place->id)->get();
+
+            $total_votes = Vote::query()->where("constituency_id", $place->id)->sum("votes");
+
+            $data = [
+                "communities" => CommunitiesResource::collection($communities),
+                "totalVotes" => $total_votes,
+                "MPs" => $MPs,
+            ];
+
+            return response()->json($data);
+
+        }
+
+        return response()->json($place);
+
+
+    }
+
+    public function mpSWIndex()
+    {
+
+        $place = Constituency::where("name", "Sissala West")->first();
 
         if ($place) {
             $MPs = Candidate::query()->withSum("votes", "votes")
