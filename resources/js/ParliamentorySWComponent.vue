@@ -124,6 +124,7 @@ import SideTrendComponent from "./SideTrendComponent.vue";
 import {toMoney} from "./untils/formatters.js";
 import CommunitySummaries from "./CommunitySummaries.vue";
 import LiveIndecatorComponent from "./LiveIndecatorComponent.vue";
+import {store} from "./store.js";
 
 export default {
     name: "ParliamentorySWComponent",
@@ -135,9 +136,17 @@ export default {
             total_Votes:0
         }
     },
+    watch:{
+        reload(){
+            this.getResults();
+        }
+    },
     computed: {
 
 
+        reload() {
+            return store.state.reload;
+        },
 
         series() {
 

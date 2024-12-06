@@ -119,15 +119,10 @@ export default {
     },
     watch:{
         reload(){
-            alert("get results")
             this.getResults();
         }
     },
     computed: {
-        store() {
-            return store
-        },
-
 
         reload() {
             return store.state.reload;

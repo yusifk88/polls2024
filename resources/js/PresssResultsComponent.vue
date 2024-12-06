@@ -127,8 +127,18 @@ export default {
             total_Votes:0
         }
     },
+    watch:{
+        reload(){
+            this.getResults();
+        }
+    },
     computed: {
-
+        watch:{
+            reload(){
+                alert("get results")
+                this.getResults();
+            }
+        },
         others(){
             const list =this.candidates.filter(item=>{
                 return !["John Dramani Mahama","Mahamudu Bawumia"].includes(item.name)
