@@ -10,7 +10,7 @@ import * as directives from 'vuetify/directives';
 import {router} from "./router.js";
 import VueApexCharts from "vue3-apexcharts";
 import RecordComponent from "./RecordComponent.vue";
-
+import RecordPressComponent from "./RecordPressComponent.vue";
 
 const vuetify = createVuetify({
     components,
@@ -136,7 +136,7 @@ const vuetify = createVuetify({
 });
 
 createApp({
-    components:{RecordComponent},
+    components:{RecordComponent,RecordPressComponent},
     data(){
         return{
             count:0

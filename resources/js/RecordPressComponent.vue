@@ -2,13 +2,13 @@
 
     <v-dialog v-model="showDialog" width="500" :fullscreen="$vuetify.display.mobile">
         <template v-slot:activator="{props}">
-            <v-btn variant="flat" v-bind="props">Record Parliamentary</v-btn>
+            <v-btn class="ml-3" variant="flat" v-bind="props">Record Presidential</v-btn>
         </template>
 
         <v-card>
             <v-toolbar class="bg-transparent">
                 <v-toolbar-title>
-                    Record Parliamentary Results
+                    Record Presidential Results
                 </v-toolbar-title>
 
 
@@ -116,7 +116,7 @@
 
 <script>
 export default {
-    name: "RecordComponent",
+    name: "RecordPressComponent",
     data() {
         return {
             showDialog: false,
@@ -163,16 +163,14 @@ export default {
 
         filteredCondidates() {
 
-            const items = this.candidates.filter(item => {
-                return item.constituency_id == this.selectedConstituency.id;
-            })
-
-            return items;
+            return this.candidates.filter(item => {
+                return !item.constituency_id;
+            });
         }
     },
     methods: {
 
-       async save() {
+        async save() {
 
             const {valid} = await this.$refs.recordForm.validate();
 

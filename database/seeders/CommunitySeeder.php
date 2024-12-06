@@ -246,6 +246,13 @@ class CommunitySeeder extends Seeder
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
+            ]  ,
+
+            [
+                "name" => "KUNSOLA",
+                "latitude" => 10.8800,
+                "longitude" => -1.9380,
+                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ]
             , [
                 "name" => "TANVIEL",

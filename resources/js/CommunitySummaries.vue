@@ -1,6 +1,6 @@
 <template>
 
-    <h1 class="mt-8 text-h5">Community summaries</h1>
+    <h1 class="mt-8 text-h5">{{from=='east' ? "Community" : "Electoral area" }} summaries</h1>
 
 <center>
 
@@ -15,7 +15,6 @@
 
 
     <h1 class="text-h2 mb-4 mt-4">{{toMoney(total_votes)}} Total votes</h1>
-
 
 
     <p class="text-h6">Breakdown</p>
@@ -86,7 +85,8 @@ export default {
 
 
                 if (this.from=='east'){
-                if (Number(this.findCandidate(item.candidate_votes, "Amidu Chinnia Issahaku").total_votes) < Number(this.findCandidate(item.candidate_votes, "Issah Mohamed Bataglia").total_votes)) {
+
+                if (Number(this.findCandidate(item.candidate_votes, "Amidu Chinnia Issahaku").total_votes) > Number(this.findCandidate(item.candidate_votes, "Issah Mohamed Bataglia").total_votes)) {
 
                     setOne++;
 
@@ -94,6 +94,7 @@ export default {
 
                     settwo++;
                 }
+
                 }else {
 
                     if (Number(this.findCandidate(item.candidate_votes, "Mohammed Adams Supkaru").total_votes) > Number(this.findCandidate(item.candidate_votes, "Salifu Naliwie Baliwie").total_votes)) {

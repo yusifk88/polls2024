@@ -3,7 +3,7 @@
 
         <v-skeleton-loader type="list-item-three-line@10" v-if="loading"></v-skeleton-loader>
         <span v-else>
-         <h1 class="text-h3">Total valid votes: {{ toMoney(tottal_votes) }}</h1>
+         <h1 class="text-h3">Total valid votes: {{ toMoney(total_votes) }}</h1>
 
          <h1>Polling station breakdown</h1>
 
@@ -18,7 +18,7 @@
                      </template>
                      <v-list-item-title>{{ item.name }}</v-list-item-title>
                      <v-list-item-subtitle class="text-h5 mt-2">{{ toMoney(sumVotes(station.id,item.votes)) }} Votes</v-list-item-subtitle>
-                     <v-list-item-subtitle>
+                     <v-list-item-subtitle class="mt-3">
                          <v-progress-linear :model-value="percent(sumVotes(station.id,item.votes),sumCandidates(station.id,station.constituency.candidates))" class="mt-2" height="20" :color="item.party.color_code"></v-progress-linear>
                      </v-list-item-subtitle>
                  </v-list-item>
@@ -41,10 +41,23 @@ export default {
     },
     data() {
         return {
-            tottal_votes: 0,
             loading: false,
-            stations: []
+            stations: [],
+            total_votes:0
         }
+    },
+
+    computed:{
+        // total_votes(){
+        //
+        //     let sum=0;
+        //
+        //         this.stations.forEach(station => {
+        //             sum += this.sumCandidates(station.id, station.constituency.candidates)
+        //         })
+        //
+        //     return sum;
+        // }
     },
     methods: {
         toMoney,
@@ -84,8 +97,8 @@ export default {
 
             axios.get(URL)
                 .then(res => {
-                    this.tottal_votes = res.data.total_votes;
                     this.stations = res.data.polling_stations;
+                    this.total_votes = res.data.total_votes;
 
                 })
 

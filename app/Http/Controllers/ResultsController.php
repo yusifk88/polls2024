@@ -9,6 +9,7 @@ use App\Models\Constituency;
 use App\Models\PollingStation;
 use App\Models\Vote;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ResultsController extends Controller
 {
@@ -20,10 +21,30 @@ class ResultsController extends Controller
         $community = Community::find($id);
         if ($community) {
 
-            $total_votes = Vote::where("community_id", $id)->sum('votes');
             $polling_stations = PollingStation::with("constituency.candidates.votes")->withSum("votes", "votes")->with("constituency.candidates.party")->where("community_id", $id)->get();
 
             $list = $polling_stations->where("votes_sum_votes", ">", 0);
+
+
+            $total_votes = $list->sum("votes_sum_votes");
+
+//            foreach ($list as $polling_station) {
+//
+//                $sum = 0;
+//                foreach ($polling_station->constituency->candidates as $candidate) {
+//
+//                        foreach ($candidate->votes as $vote) {
+//                            $sum += $vote->votes;
+//
+//                    }
+//                    }
+//
+//                $total_votes +=$sum;
+//
+//                }
+
+
+
 
             return response()->json([
                 "total_votes" => $total_votes,
@@ -99,6 +120,93 @@ class ResultsController extends Controller
         return response()->json($list);
     }
 
+
+    public function prSEIndex()
+    {
+
+        $place = Constituency::where("name", "Sissala East")->first();
+
+        if ($place) {
+            $MPs = Candidate::query()
+                ->with("party")
+                ->with("constituency")
+                ->whereNull("constituency_id")
+                ->orderBy("name")
+                ->get();
+
+
+            $pressList =[];
+
+            foreach ($MPs as $MP) {
+                $votes = Vote::query()->where("constituency_id", $place->id)->where("candidate_id", $MP->id)->sum("votes");
+                $MP->votes_sum_votes = $votes;
+                $pressList[] = $MP;
+
+            }
+
+            $communities = Community::query()->with("constituency.candidates.party")
+                ->with("constituency.candidates")
+                ->whereIn("id", Vote::select("community_id"))
+                ->where("constituency_id", $place->id)->get();
+
+            $total_votes = Vote::query()->where("constituency_id", $place->id)->whereIn("candidate_id", Candidate::select("id")->whereNull("constituency_id"))->sum("votes");
+
+            $data = [
+                "communities" => CommunitiesResource::collection($communities),
+                "totalVotes" => $total_votes,
+                "MPs" => $pressList,
+            ];
+
+            return response()->json($data);
+
+        }
+    }
+    public function prSWIndex()
+    {
+
+        $place = Constituency::where("name", "Sissala West")->first();
+
+        if ($place) {
+            $MPs = Candidate::query()
+                ->with("party")
+                ->with("constituency")
+                ->whereNull("constituency_id")
+                ->orderBy("name")
+                ->get();
+
+            $pressList =[];
+
+            foreach ($MPs as $MP) {
+                $votes = Vote::query()->where("constituency_id", $place->id)->where("candidate_id", $MP->id)->sum("votes");
+                $MP->votes_sum_votes = $votes;
+                $pressList[] = $MP;
+
+            }
+
+
+            $communities = Community::query()->with("constituency.candidates.party")
+                ->with("constituency.candidates")
+                ->whereIn("id", Vote::select("community_id"))
+                ->where("constituency_id", $place->id)->get();
+
+            $total_votes = Vote::query()->where("constituency_id", $place->id)
+                ->whereIn("candidate_id",Candidate::select("id")
+                    ->whereNull("constituency_id"))->sum("votes");
+
+            $data = [
+                "communities" => CommunitiesResource::collection($communities),
+                "totalVotes" => $total_votes,
+                "MPs" => $pressList,
+            ];
+
+            return response()->json($data);
+
+        }
+
+        return response()->json($place);
+
+
+    }
 
     public function mpSEIndex()
     {

@@ -1,6 +1,10 @@
 <template>
     <v-row dense>
         <v-col cols="12" class="mb-8">
+            <v-tabs>
+                <v-tab to="/sissala-east">Parliamentary</v-tab>
+                <v-tab to="/sissala-east/presidential">Presidential</v-tab>
+            </v-tabs>
             <v-toolbar class="bg-transparent">
                 <v-toolbar-title class="pl-0 ml-0">
                     <live-indecator-component></live-indecator-component>

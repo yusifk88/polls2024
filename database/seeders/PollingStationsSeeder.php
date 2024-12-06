@@ -140,7 +140,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110401",
-                "Name" => "BANU JANA PRIMARY",
+                "Name" => "BANU PRIMARY",
                 "Description" => "BANU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCHOOL",
@@ -156,7 +156,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110403",
-                "Name" => "KUNCHUGU KASSANA PRIM",
+                "Name" => "KUNCHUGU PRIM",
                 "Description" => "KUNCHUGU",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -188,7 +188,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110504",
-                "Name" => "TB TB DIDUORIJAN",
+                "Name" => "TB DIDUORIJAN",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -212,7 +212,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110601",
-                "Name" => "KASSANA CHINCHAN PRIM.",
+                "Name" => "KASSANA PRIM.",
                 "Description" => "KASSANA",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SCH",
@@ -220,7 +220,7 @@ class PollingStationsSeeder extends Seeder
             ],
             [
                 "Code" => "P110602",
-                "Name" => "TB TB KASSAPOURI",
+                "Name" => "TB KASSAPOURI",
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
@@ -280,7 +280,7 @@ class PollingStationsSeeder extends Seeder
                 "Description" => "TB",
                 "Constituency" => "SISSALA EAST",
                 "District" => "SISSALA",
-                "Community" => "SAKAI"
+                "Community" => "KUNSOLA"
             ],
             [
                 "Code" => "P110701A",

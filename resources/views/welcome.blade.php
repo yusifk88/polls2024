@@ -30,6 +30,7 @@
 
                     <template v-slot:append>
                         <record-component></record-component>
+                        <record-press-component></record-press-component>
                     </template>
                 </v-app-bar>
 

@@ -3,6 +3,7 @@ import ResultsPage from "./pages/ResultsPage.vue";
 import ParliamentoryComponent from "./ParliamentoryComponent.vue";
 import PresidentialComponent from "./PresidentialComponent.vue";
 import ParliamentorySWComponent from "./ParliamentorySWComponent.vue";
+import PresidentialSWComponent from "./PresidentialSWComponent.vue";
 
 const routes = [
     {
@@ -37,7 +38,7 @@ const routes = [
             },
             {
                 path: "presidential",
-                component: PresidentialComponent
+                component: PresidentialSWComponent
 
             }
         ]
