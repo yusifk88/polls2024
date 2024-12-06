@@ -33,7 +33,7 @@
                                 </v-avatar>
                             </v-col>
                             <v-col cols="9">
-                                <h1 class="text-h4 font-weight-black mt-6">{{percentage(can.votes_sum_votes)}}%</h1>
+                                <h1 class="text-h4 font-weight-black mt-6">{{ percentage(can.votes_sum_votes) }}%</h1>
                                 <p v-if="can.name.includes('Bataglia')">Bataglia</p>
                                 <p v-else>Chinnia</p>
 
@@ -46,7 +46,7 @@
 
                         <v-row>
                             <v-col cols="9" class="text-right">
-                                <h1 class="text-h4 font-weight-black mt-6">{{percentage(can.votes_sum_votes)}}%</h1>
+                                <h1 class="text-h4 font-weight-black mt-6">{{ percentage(can.votes_sum_votes) }}%</h1>
                                 <p v-if="can.name.includes('Bataglia')">Bataglia</p>
                                 <p v-else>Chinnia</p>
 
@@ -71,7 +71,7 @@
                             :key="can.id"
 
                             cols="6" :class="{'pl-10':index===0,'text-right':index>0,'pr-6':index>0}">
-                            {{can ? toMoney(can.votes_sum_votes) : 0 }} Votes
+                            {{ can ? toMoney(can.votes_sum_votes) : 0 }} Votes
                         </v-col>
 
                     </v-row>
@@ -80,7 +80,8 @@
                 <v-col cols="12">
                     <v-row>
                         <v-col cols="12">
-                            <community-summaries :total_votes="total_Votes" :communities="communities"></community-summaries>
+                            <community-summaries :total_votes="total_Votes"
+                                                 :communities="communities"></community-summaries>
                         </v-col>
                     </v-row>
 
@@ -104,6 +105,7 @@ import SideTrendComponent from "./SideTrendComponent.vue";
 import {toMoney} from "./untils/formatters.js";
 import CommunitySummaries from "./CommunitySummaries.vue";
 import LiveIndecatorComponent from "./LiveIndecatorComponent.vue";
+import {store} from "./store.js";
 
 export default {
     name: "ParliamentoryComponent",
@@ -112,12 +114,24 @@ export default {
         return {
             candidates: [],
             communities: [],
-            total_Votes:0
+            total_Votes: 0
+        }
+    },
+    watch:{
+        reload(){
+            alert("get results")
+            this.getResults();
         }
     },
     computed: {
+        store() {
+            return store
+        },
 
 
+        reload() {
+            return store.state.reload;
+        },
 
         series() {
 
@@ -151,7 +165,7 @@ export default {
                 },
                 dataLabels: {
                     enabled: false,
-                    show:false
+                    show: false
 
                 },
 
@@ -206,14 +220,13 @@ export default {
     methods: {
         toMoney,
 
-        percentage(num){
+        percentage(num) {
 
             return Number(this.total_Votes) > 0 ? ((num / Number(this.total_Votes)) * 100).toFixed(2) : 0;
         },
         getResults() {
             axios.get("/api/mp-results/sissala-east")
                 .then(res => {
-                    console.log(res.data);
                     this.candidates = res.data.MPs;
                     this.communities = res.data.communities;
                     this.total_Votes = res.data.totalVotes

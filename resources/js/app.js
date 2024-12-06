@@ -4,7 +4,7 @@ import {createApp} from 'vue/dist/vue.esm-bundler';
 // Vuetify
 import '@mdi/font/css/materialdesignicons.css';
 import 'vuetify/styles';
-import { createVuetify } from 'vuetify';
+import {createVuetify} from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import {router} from "./router.js";
@@ -137,18 +137,17 @@ const vuetify = createVuetify({
 });
 
 createApp({
-    components:{RecordComponent,RecordPressComponent},
-    data(){
-        return{
-            count:0
+    components: {RecordComponent, RecordPressComponent},
+    data() {
+        return {
+            count: 0
         }
     },
     mounted() {
 
         Echo.channel(`votes_updated`)
             .listen('VotesPosted', (e) => {
-                console.log(e.order);
-                alert("Fired")
+                store.state.reload = !store.state.reload;
             });
     }
 })
