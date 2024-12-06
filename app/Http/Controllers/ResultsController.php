@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\VotesPosted;
 use App\Http\Resources\CommunitiesResource;
 use App\Models\Candidate;
 use App\Models\Community;
@@ -86,6 +87,9 @@ class ResultsController extends Controller
             ]);
 
             $vote->save();
+
+            event(new VotesPosted());
+
             return response()->json($vote);
 
         }

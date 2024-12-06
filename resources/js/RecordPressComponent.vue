@@ -2,7 +2,7 @@
 
     <v-dialog v-model="showDialog" width="500" :fullscreen="$vuetify.display.mobile">
         <template v-slot:activator="{props}">
-            <v-btn class="ml-3" variant="flat" v-bind="props">Record Presidential</v-btn>
+            <v-btn :size="$vuetify.display.mobile ? 'default' : 'large'" class="ml-3" variant="flat" v-bind="props">Record Pres.</v-btn>
         </template>
 
         <v-card>

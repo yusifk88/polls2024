@@ -32,7 +32,7 @@
 
                         <v-row>
                             <v-col cols="3">
-                                <v-avatar size="90">
+                                <v-avatar :size="$vuetify.display.mobile ?40: 90">
                                     <v-img :src="can.photo_url"></v-img>
                                 </v-avatar>
                             </v-col>
@@ -56,7 +56,7 @@
 
                             </v-col>
                             <v-col cols="3">
-                                <v-avatar size="90">
+                                <v-avatar :size="$vuetify.display.mobile ?40: 90">
                                     <v-img :src="can.photo_url"></v-img>
                                 </v-avatar>
                             </v-col>

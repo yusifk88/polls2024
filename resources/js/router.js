@@ -4,11 +4,16 @@ import ParliamentoryComponent from "./ParliamentoryComponent.vue";
 import PresidentialComponent from "./PresidentialComponent.vue";
 import ParliamentorySWComponent from "./ParliamentorySWComponent.vue";
 import PresidentialSWComponent from "./PresidentialSWComponent.vue";
+import LoginPage from "./pages/LoginPage.vue";
 
 const routes = [
     {
         path: "/",
         redirect: "/sissala-east"
+    },
+    {
+      path: "/login",
+      component: LoginPage
     },
     {
         path: "/sissala-east",

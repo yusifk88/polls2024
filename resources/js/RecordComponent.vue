@@ -2,7 +2,7 @@
 
     <v-dialog v-model="showDialog" width="500" :fullscreen="$vuetify.display.mobile">
         <template v-slot:activator="{props}">
-            <v-btn variant="flat" v-bind="props">Record Parliamentary</v-btn>
+            <v-btn :size="$vuetify.display.mobile ? 'default' : 'large'" variant="flat" v-bind="props">Record Parl</v-btn>
         </template>
 
         <v-card>
@@ -119,6 +119,7 @@ export default {
     name: "RecordComponent",
     data() {
         return {
+            user:null,
             showDialog: false,
             constituencies: [],
             candidates: [],
@@ -171,6 +172,13 @@ export default {
         }
     },
     methods: {
+
+        getUser(){
+          axios.get("/api/user")
+              .then(res=>{
+                  this.user=res.data.data;
+              })
+        },
 
        async save() {
 
@@ -234,6 +242,7 @@ export default {
         this.getCandidates();
         this.getConstituencies();
         this.getPolingStations();
+        this.getUser();
     }
 }
 </script>

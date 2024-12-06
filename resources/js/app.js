@@ -11,6 +11,7 @@ import {router} from "./router.js";
 import VueApexCharts from "vue3-apexcharts";
 import RecordComponent from "./RecordComponent.vue";
 import RecordPressComponent from "./RecordPressComponent.vue";
+import {store} from "./store.js";
 
 const vuetify = createVuetify({
     components,
@@ -141,8 +142,17 @@ createApp({
         return{
             count:0
         }
+    },
+    mounted() {
+
+        Echo.channel(`votes_updated`)
+            .listen('VotesPosted', (e) => {
+                console.log(e.order);
+                alert("Fired")
+            });
     }
 })
+    .use(store)
     .use(vuetify)
     .use(router)
     .use(VueApexCharts)

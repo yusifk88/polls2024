@@ -4,4 +4,8 @@
 {{--@section('code', '404')--}}
 {{--@section('message', __('Not Found'))--}}
 
-@include("welcome");
+<?php
+$user = \Illuminate\Support\Facades\Auth::user();
+?>
+
+@include("welcome",["user"=>$user]);

@@ -17,3 +17,10 @@ Route::get("candidates/press", [ResultsController::class, 'candidatesPress']);
 Route::get("community/{id}", [ResultsController::class, 'communityDetails']);
 Route::get("poling-stations", [ResultsController::class, 'polingStations']);
 Route::post("record-pm",[ResultsController::class, 'recordPM']);
+
+Route::get("/user",function (){
+
+   $user = request()->user();
+
+   return response()->json(["message"=>"User returned","data"=>$user]);
+})->middleware('auth:sanctum');
