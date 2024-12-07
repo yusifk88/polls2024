@@ -22,7 +22,7 @@ class CommunitySeeder extends Seeder
             ],
 
             [
-                "name" => "CHALLU/PIEN",
+                "name" => "CHALLU",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
@@ -42,53 +42,8 @@ class CommunitySeeder extends Seeder
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "BASSISAN",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ]
 
-            ,
-            [
-                "name" => "PINA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ], [
-                "name" => "KUNCHUGU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "NANCHALA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-            [
-                "name" => "WURU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "DIMAJAN",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "TAFFIASI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
             ,
 
             [
@@ -99,72 +54,12 @@ class CommunitySeeder extends Seeder
             ],
 
             [
-                "name" => "YIGANTU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "SIMBORU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,
-
-            [
                 "name" => "KASSANA",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "DIDUORIJAN",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "KASSAPOURI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "KATINIA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ]
             ,
-
-            [
-                "name" => "LILIXIA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-            [
-                "name" => "NAHADAKUI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-            [
-                "name" => "DANGI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-            [
-                "name" => "BAKUALA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
 
             [
                 "name" => "SAKAI",
@@ -173,107 +68,25 @@ class CommunitySeeder extends Seeder
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ],
             [
-                "name" => "NANKPAWIE",
+                "name" => "Kyeiviara-Yalia",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ],
             [
-                "name" => "KOWIE",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ], [
-                "name" => "HALAMBOI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "NAVROWIE",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-            [
-                "name" => "SAKALU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ], [
-                "name" => "JIJEN",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ],
-
-            [
-                "name" => "JANA",
+                "name" => "Wallembelle",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ]
             ,
-            [
-                "name" => "TIMBAKA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ] ,  [
-                "name" => "BENDEI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ] ,
-
-            [
-                "name" => "SENTIE",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "TANLA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,
-
             [
                 "name" => "KONG",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]  ,
+            ]
 
-            [
-                "name" => "KUNSOLA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "TANVIEL",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,
-
-            [
-                "name" => "KPAVIALA/ YALIA",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "CHINCHAN",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
             ,
 
             [
@@ -281,27 +94,14 @@ class CommunitySeeder extends Seeder
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            , [
-                "name" => "DAGBASU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,
-
+            ],
             [
                 "name" => "BUGUBELLE",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ]
-            ,  [
-                "name" => "KULUFUO",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]  ,  [
+            , [
                 "name" => "VAMBOI",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
@@ -321,20 +121,21 @@ class CommunitySeeder extends Seeder
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ] ,  [
-                "name" => "BUCHEMBOI",
+            ],  [
+                "name" => "TUMU",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ] ,
+            ],
+
             [
-                "name" => "KUROBOI",
+                "name" => "Kusinjan",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ] ,
+            ],
             [
-                "name" => "FACHOBOI",
+                "name" => "Nyaminjan",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
@@ -348,20 +149,13 @@ class CommunitySeeder extends Seeder
             ]
             ,
             [
-                "name" => "TUMU",
+                "name" => "Stadium",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ] ,
+            ],
             [
                 "name" => "NYEMINJAN",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,
-            [
-                "name" => "STADIUM RESIDENTIAL",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
@@ -387,22 +181,15 @@ class CommunitySeeder extends Seeder
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
+            ],
+            [
+                "name" => "Dolibzon",
+                "latitude" => 10.8800,
+                "longitude" => -1.9380,
+                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
             ]
             , [
-                "name" => "KALAXSI",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,
-            [
-                "name" => "GBENEWISE",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-            ,  [
-                "name" => "GUOSI",
+                "name" => "Kasana",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
@@ -424,13 +211,6 @@ class CommunitySeeder extends Seeder
             ,
             [
                 "name" => "NITALU",
-                "latitude" => 10.8800,
-                "longitude" => -1.9380,
-                "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,
-            ]
-  ,
-            [
-                "name" => "KOMOR",
                 "latitude" => 10.8800,
                 "longitude" => -1.9380,
                 "constituency_id" => Constituency::where("name", "Sissala East")->first()->id,

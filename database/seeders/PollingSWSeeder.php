@@ -1460,13 +1460,6 @@ class PollingSWSeeder extends Seeder
 
         foreach ($list as $polling) {
 
-//
-//            $electoralArea = array_filter($lookup, function ($item) use ($polling) {
-//
-//                return $item["Code"] == $polling["Code"];
-//
-//            });
-
             $electoralArea = $lookupCollection->where("Code", $polling["Code"])->first()['Electoral_area'];
 
             PollingStation::query()->create([

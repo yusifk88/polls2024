@@ -17,6 +17,868 @@ class PollingStationsSeeder extends Seeder
     {
 
 
+        $lookup = [
+            [
+                "Code" => "P110101A",
+                "Name" => "BUJAN PRIMARY SCHOOL",
+                "Description" => "BUJAN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "BUJAN"
+            ],
+            [
+                "Code" => "P110101B",
+                "Name" => "BUJAN PRIMARY SCHOOL",
+                "Description" => "BUJAN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "BUJAN"
+            ],
+            [
+                "Code" => "P110102",
+                "Name" => "NABUGUBELLE PRIM. SCH",
+                "Description" => "NABUGUBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "BUJAN"
+            ],
+            [
+                "Code" => "P110103",
+                "Name" => "NABUGUBELLE PRIM. SCH",
+                "Description" => "NABUGUBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "BUJAN"
+            ],
+            [
+                "Code" => "P110104",
+                "Name" => "NANCHALA PRIM. SCH.",
+                "Description" => "NANCHALA",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "BUJAN"
+            ],
+            [
+                "Code" => "P110105",
+                "Name" => "TAFFIASI PRIMARY SCH.",
+                "Description" => "TAFFIASI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "BUJAN"
+            ],
+            [
+                "Code" => "P110201A",
+                "Name" => "CHALLU PRIM SCH",
+                "Description" => "CHALLU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "CHALLU"
+            ],
+            [
+                "Code" => "P110201B",
+                "Name" => "CHALLU PRIM SCH",
+                "Description" => "CHALLU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "CHALLU"
+            ],
+            [
+                "Code" => "P110202A",
+                "Name" => "CHALLU PRIM SCH",
+                "Description" => "CHALLU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "CHALLU"
+            ],
+            [
+                "Code" => "P110202B",
+                "Name" => "CHALLU PRIM SCH",
+                "Description" => "CHALLU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "CHALLU"
+            ],
+            [
+                "Code" => "P110203",
+                "Name" => "PIEN PRIMARY SCHOOL",
+                "Description" => "PIEN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "CHALLU"
+            ],
+            [
+                "Code" => "P110204",
+                "Name" => "PIEN PRIMARY SCHOOL",
+                "Description" => "PIEN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "CHALLU"
+            ],
+            [
+                "Code" => "P110301",
+                "Name" => "KWAPUN PRIMARY SCH",
+                "Description" => "KWAPUN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "KWAPUN"
+            ],
+            [
+                "Code" => "P110302",
+                "Name" => "WURU PRIMARY SCHOOL",
+                "Description" => "WURU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "KWAPUN"
+            ],
+            [
+                "Code" => "P110303",
+                "Name" => "PINA PRIMARY SCHOOL",
+                "Description" => "PINA",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "KWAPUN"
+            ],
+            [
+                "Code" => "P110401",
+                "Name" => "BANU PRIMARY SCHOOL",
+                "Description" => "BANU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "KWAPUN"
+            ],
+            [
+                "Code" => "P110402",
+                "Name" => "BASSISAN PRIMARY SCH",
+                "Description" => "BASSISAN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "KWAPUN"
+            ],
+            [
+                "Code" => "P110403",
+                "Name" => "KUNCHUGU PRIM SCH",
+                "Description" => "KUNCHUGU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "KWAPUN"
+            ],
+            [
+                "Code" => "P110501",
+                "Name" => "DOLIBIZON PRIM. SCH",
+                "Description" => "DOLIBIZON",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "Dolibzon"
+            ],
+            [
+                "Code" => "P110502",
+                "Name" => "YIGANTU PRIMARY SCH",
+                "Description" => "YIGANTU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "Dolibzon"
+            ],
+            [
+                "Code" => "P110503",
+                "Name" => "SIMBORU PRIMARY SCH",
+                "Description" => "SIMBORU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "Dolibzon"
+            ],
+            [
+                "Code" => "P110504",
+                "Name" => "TB DIDUORIJAN SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "Dolibzon"
+            ],
+            [
+                "Code" => "P110505",
+                "Name" => "JANA PRIMARY SCH",
+                "Description" => "JANA",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "Dolibzon"
+            ],
+            [
+                "Code" => "P110506",
+                "Name" => "DIMAJAN PRIMARY SCHOOL",
+                "Description" => "DIMAJAN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "Dolibzon"
+            ],
+            [
+                "Code" => "P110601",
+                "Name" => "KASSANA PRIM. SCH",
+                "Description" => "KASSANA",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110602",
+                "Name" => "TB KASSAPOURI SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110603",
+                "Name" => "TB KATINIA SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110604",
+                "Name" => "TB NAVROWIE SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110605",
+                "Name" => "TB TANLA SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110606",
+                "Name" => "TB TANVIEL SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110607",
+                "Name" => "TB NITALU SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110608",
+                "Name" => "CHINCHAN PRIM. SCH",
+                "Description" => "CHINCHAN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110609",
+                "Name" => "TB KUNSOLA ",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "",
+                "Electoral_area" => "KASANA"
+            ],
+            [
+                "Code" => "P110701A",
+                "Name" => "SAKAI PRIMARY SCH.",
+                "Description" => "SAKAI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110701B",
+                "Name" => "SAKAI PRIMARY SCH.",
+                "Description" => "SAKAI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110702A",
+                "Name" => "SAKAI PRIMARY SCH.",
+                "Description" => "SAKAI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110702B",
+                "Name" => "SAKAI PRIMARY SCH.",
+                "Description" => "SAKAI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110703",
+                "Name" => "NANKPAWIE PRIM. SCH",
+                "Description" => "NANKPAWIE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110704",
+                "Name" => "LILIXIA PRIMARY SCHOOL",
+                "Description" => "LILIXIA",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110705",
+                "Name" => "TB NAHADAKUI SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "SAKAI"
+            ],
+            [
+                "Code" => "P110801",
+                "Name" => "KONG PRIMARY SCHOOL",
+                "Description" => "KONG",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "KONG"
+            ],
+            [
+                "Code" => "P110802",
+                "Name" => "DANGI PRIMARY SCHOOL",
+                "Description" => "DANGI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "KONG"
+            ],
+            [
+                "Code" => "P110803",
+                "Name" => "TB BAKUALA SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "KONG"
+            ],
+            [
+                "Code" => "P110804",
+                "Name" => "KOWIE PRIMARY SCHOOL",
+                "Description" => "KOWIE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "KONG"
+            ],
+            [
+                "Code" => "P110805",
+                "Name" => "TB BALOLO KONG",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "KONG",
+                "Electoral_area" => "KONG"
+            ],
+            [
+                "Code" => "P110806",
+                "Name" => "HALAMBOI MARKET CENTRE",
+                "Description" => "HALAMBOI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "CENTRE",
+                "Electoral_area" => "KONG"
+            ],
+            [
+                "Code" => "P110901A",
+                "Name" => "SAKALU PRIMARY SCH.",
+                "Description" => "SAKALU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "Kyeiviara-Yalia"
+            ],
+            [
+                "Code" => "P110901B",
+                "Name" => "SAKALU PRIMARY SCH.",
+                "Description" => "SAKALU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "Kyeiviara-Yalia"
+            ],
+            [
+                "Code" => "P110902",
+                "Name" => "JIJEN PRIMARY SCHOOL",
+                "Description" => "JIJEN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "Kyeiviara-Yalia"
+            ],
+            [
+                "Code" => "P110903",
+                "Name" => "SENTIE PRIMARY SCHOOL",
+                "Description" => "SENTIE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "Kyeiviara-Yalia"
+            ],
+            [
+                "Code" => "P110904",
+                "Name" => "BENDEI PRIMARY SCHOOL",
+                "Description" => "BENDEI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "Kyeiviara-Yalia"
+            ],
+            [
+                "Code" => "P110905",
+                "Name" => "TB TIMBAKA SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "Kyeiviara-Yalia"
+            ],
+            [
+                "Code" => "P111001A",
+                "Name" => "WELLEMBELLE PRIM. SCH",
+                "Description" => "WELLEMBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111001B",
+                "Name" => "WELLEMBELLE PRIM. SCH",
+                "Description" => "WELLEMBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111002",
+                "Name" => "WELLEMBELLE JHS ",
+                "Description" => "WELLEMBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111003A",
+                "Name" => "WELLEMBELLE JHS ",
+                "Description" => "WELLEMBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111003B",
+                "Name" => "WELLEMBELLE JHS ",
+                "Description" => "WELLEMBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111004",
+                "Name" => "DAGBASU PRIMARY SCH",
+                "Description" => "DAGBASU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111005",
+                "Name" => "DAGBASU CENTRAL MOSQUE",
+                "Description" => "DAGBASU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "MOSQUE",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111006",
+                "Name" => "TB WAHABU SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "WELLEMBELLE"
+            ],
+            [
+                "Code" => "P111101A",
+                "Name" => "BUGUBELLE PRIMARY SCH",
+                "Description" => "BUGUBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "BUGUBELLE"
+            ],
+            [
+                "Code" => "P111101B",
+                "Name" => "BUGUBELLE PRIMARY SCH",
+                "Description" => "BUGUBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "BUGUBELLE"
+            ],
+            [
+                "Code" => "P111102A",
+                "Name" => "BUGUBELLE PRIMARY SCH",
+                "Description" => "BUGUBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "BUGUBELLE"
+            ],
+            [
+                "Code" => "P111102B",
+                "Name" => "BUGUBELLE PRIMARY SCH",
+                "Description" => "BUGUBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "BUGUBELLE"
+            ],
+            [
+                "Code" => "P111103A",
+                "Name" => "VAMBOI DAYCARE SISSALA",
+                "Description" => "VAMBOI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "BUGUBELLE"
+            ],
+            [
+                "Code" => "P111103B",
+                "Name" => "VAMBOI DAYCARE SISSALA",
+                "Description" => "VAMBOI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "BUGUBELLE"
+            ],
+            [
+                "Code" => "P111201",
+                "Name" => "KULFUO PRIMARY SCH.",
+                "Description" => "KULFUO",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "KULFUO/TARSOR"
+            ],
+            [
+                "Code" => "P111202",
+                "Name" => "KULFUO HEALTH CENTRE",
+                "Description" => "KULFUO",
+                "Constituency" => "SISSALA EAST",
+                "District" => "CENTRE",
+                "Electoral_area" => "KULFUO/TARSOR"
+            ],
+            [
+                "Code" => "P111203A",
+                "Name" => "TARSOR PRIMARY SCH.",
+                "Description" => "TARSOR",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "KULFUO/TARSOR"
+            ],
+            [
+                "Code" => "P111203B",
+                "Name" => "TARSOR PRIMARY SCH.",
+                "Description" => "TARSOR",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH.",
+                "Electoral_area" => "KULFUO/TARSOR"
+            ],
+            [
+                "Code" => "P111301A",
+                "Name" => "MWANDUANU PRIM. SCH",
+                "Description" => "MWANDUANU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "MWANDUANU"
+            ],
+            [
+                "Code" => "P111301B",
+                "Name" => "MWANDUANU PRIM. SCH",
+                "Description" => "MWANDUANU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "MWANDUANU"
+            ],
+            [
+                "Code" => "P111302",
+                "Name" => "MWANDUANU PRIM. SCH",
+                "Description" => "MWANDUANU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "MWANDUANU"
+            ],
+            [
+                "Code" => "P111303",
+                "Name" => "KUROBOI PRIM. SCHOOL",
+                "Description" => "KUROBOI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "MWANDUANU"
+            ],
+            [
+                "Code" => "P111304",
+                "Name" => "BUCHEMBOI PRIM. SCH",
+                "Description" => "BUCHEMBOI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCH",
+                "Electoral_area" => "MWANDUANU"
+            ],
+            [
+                "Code" => "P111401A",
+                "Name" => "TUMU SEC. TECH.",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "TECH.",
+                "Electoral_area" => "Kusinjan"
+            ],
+            [
+                "Code" => "P111401B",
+                "Name" => "TUMU SEC. TECH.",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "TECH.",
+                "Electoral_area" => "Kusinjan"
+            ],
+            [
+                "Code" => "P111402",
+                "Name" => "TUMU SEC. TECH.",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "TECH.",
+                "Electoral_area" => "Kusinjan"
+            ],
+            [
+                "Code" => "P111403A",
+                "Name" => "TUMU COURT HOUSE",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "HOUSE",
+                "Electoral_area" => "Kusinjan"
+            ],
+            [
+                "Code" => "P111403B",
+                "Name" => "TUMU COURT HOUSE",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "HOUSE",
+                "Electoral_area" => "Kusinjan"
+            ],
+            [
+                "Code" => "P111404",
+                "Name" => "TUMU COURT HOUSE",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "HOUSE",
+                "Electoral_area" => "Kusinjan"
+            ],
+            [
+                "Code" => "P111501",
+                "Name" => "TUMU COMMUNITY CENTRE",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "CENTRE",
+                "Electoral_area" => "Nyaminjan"
+            ],
+            [
+                "Code" => "P111502",
+                "Name" => "TUMU RURAL BANK",
+                "Description" => "TUMU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "BANK",
+                "Electoral_area" => "Nyaminjan"
+            ],
+            [
+                "Code" => "P111601",
+                "Name" => "ASSEMBLY CANTEEN SISSALA",
+                "Description" => "ASSEMBLY",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "Stadium"
+            ],
+            [
+                "Code" => "P111602",
+                "Name" => "TB CENTRAL BOREHOLE",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "BOREHOLE",
+                "Electoral_area" => "Stadium"
+            ],
+            [
+                "Code" => "P111701",
+                "Name" => "TB GPRTU SISSALA",
+                "Description" => "TB",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SISSALA",
+                "Electoral_area" => "Zongo extension"
+            ],
+            [
+                "Code" => "P111702",
+                "Name" => "UNITED PRIMARY SCHOOL",
+                "Description" => "UNITED",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "Zongo extension"
+            ],
+            [
+                "Code" => "P111703",
+                "Name" => "FALAHIA PRIMARY SCHOOL",
+                "Description" => "FALAHIA",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "Zongo extension"
+            ],
+            [
+                "Code" => "P111704",
+                "Name" => "BAPTIST MISSION HOUSE",
+                "Description" => "BAPTIST",
+                "Constituency" => "SISSALA EAST",
+                "District" => "HOUSE",
+                "Electoral_area" => "Nanyua"
+            ],
+            [
+                "Code" => "P111801A",
+                "Name" => "CENTRAL AHMADIYA MOSQUE",
+                "Description" => "CENTRAL",
+                "Constituency" => "SISSALA EAST",
+                "District" => "MOSQUE",
+                "Electoral_area" => "Nanyua"
+            ],
+            [
+                "Code" => "P111801B",
+                "Name" => "CENTRAL AHMADIYA MOSQUE",
+                "Description" => "CENTRAL",
+                "Constituency" => "SISSALA EAST",
+                "District" => "MOSQUE",
+                "Electoral_area" => "Nanyua"
+            ],
+            [
+                "Code" => "P111802",
+                "Name" => "CENTRAL AHMADIYA MOSQUE",
+                "Description" => "CENTRAL",
+                "Constituency" => "SISSALA EAST",
+                "District" => "MOSQUE",
+                "Electoral_area" => "Nanyua"
+            ],
+            [
+                "Code" => "P111803",
+                "Name" => "NANYUOBELIIN SISSALA EAST",
+                "Description" => "NANYUOBELIIN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "EAST",
+                "Electoral_area" => "Nanyua"
+            ],
+            [
+                "Code" => "P111901",
+                "Name" => "NABULO PRIMARY SCHOOL",
+                "Description" => "NABULO",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "NABULO"
+            ],
+            [
+                "Code" => "P111902",
+                "Name" => "FACHOBOI PRIMARY SCHOOL",
+                "Description" => "FACHOBOI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "NABULO"
+            ],
+            [
+                "Code" => "P111903A",
+                "Name" => "NABULO TEACHERS QUARTERS",
+                "Description" => "NABULO",
+                "Constituency" => "SISSALA EAST",
+                "District" => "QUARTERS",
+                "Electoral_area" => "NABULO"
+            ],
+            [
+                "Code" => "P111903B",
+                "Name" => "NABULO TEACHERS QUARTERS",
+                "Description" => "NABULO",
+                "Constituency" => "SISSALA EAST",
+                "District" => "QUARTERS",
+                "Electoral_area" => "NABULO"
+            ],
+            [
+                "Code" => "P112001A",
+                "Name" => "BAWIASIBELLE PRIMARY SCHOOL",
+                "Description" => "BAWIASIBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "BAWIASIBELLE"
+            ],
+            [
+                "Code" => "P112001B",
+                "Name" => "BAWIASIBELLE PRIMARY SCHOOL",
+                "Description" => "BAWIASIBELLE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "BAWIASIBELLE"
+            ],
+            [
+                "Code" => "P112002",
+                "Name" => "DUU PRIMARY SCHOOL",
+                "Description" => "DUU",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "BAWIASIBELLE"
+            ],
+            [
+                "Code" => "P112003",
+                "Name" => "KOMO PRIMARY SCHOOL",
+                "Description" => "KOMO",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "BAWIASIBELLE"
+            ],
+            [
+                "Code" => "P112101",
+                "Name" => "SANTIJAN PRIMARY SCHOOL",
+                "Description" => "SANTIJAN",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "SANTIJAN"
+            ],
+            [
+                "Code" => "P112102",
+                "Name" => "GUOSI UPPER PRIMARY",
+                "Description" => "GUOSI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "PRIMARY",
+                "Electoral_area" => "SANTIJAN"
+            ],
+            [
+                "Code" => "P112103",
+                "Name" => "GUOSI LOWER JHS",
+                "Description" => "GUOSI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "JHS",
+                "Electoral_area" => "SANTIJAN"
+            ],
+            [
+                "Code" => "P112104",
+                "Name" => "GBENEWISE PRIMARY SCHOOL",
+                "Description" => "GBENEWISE",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "SANTIJAN"
+            ],
+            [
+                "Code" => "P112105",
+                "Name" => "KALAXSI PRIMARY SCHOOL",
+                "Description" => "KALAXSI",
+                "Constituency" => "SISSALA EAST",
+                "District" => "SCHOOL",
+                "Electoral_area" => "SANTIJAN"
+            ],
+            [
+                "Code" => "P1101SPS",
+                "Name" => "TUMU  POLICE STATION STATION",
+                "Description" => "TUMU ",
+                "Constituency" => "SISSALA EAST",
+                "District" => "STATION",
+                "Electoral_area" => "TUMU"
+            ]
+        ];
+
+
+
+
         $list = [
             [
                 "Code" => "P110101A",
@@ -877,17 +1739,17 @@ class PollingStationsSeeder extends Seeder
         ];
 
 
-        PollingStation::where("id",">",0)->delete();
+        $lookupCollection = collect($lookup);
 
-        foreach ($list as $item){
+        foreach ($list as $polling) {
 
+            $electoralArea = $lookupCollection->where("Code", $polling["Code"])->first()['Electoral_area'];
 
             PollingStation::query()->create([
-                "Code" => $item["Code"],
-                "Name" => $item["Name"],
-                "details"=>$item["Description"],
-                "community_id"=>Community::query()->where("name",$item["Community"])->first()->id,
-                "constituency_id"=>Constituency::query()->where("name",$item["Constituency"])->first()->id,
+                "Code" => $polling["Code"],
+                "name" => $polling["Name"],
+                "community_id"=>Community::query()->where("name",$electoralArea)->first()->id,
+                "constituency_id"=>Constituency::query()->where("name",$polling["Constituency"])->first()->id,
             ]);
 
         }

@@ -23,13 +23,13 @@ class DatabaseSeeder extends Seeder
             "password"=>Hash::make('Pa$$word@EH#24'),
         ]);
 
-//        $this->call(ConstituenciesSeeder::class);
-//        $this->call(PartySeeder::class);
-//        $this->call(CandidateSeeder::class);
-//        $this->call(CommunitySeeder::class);
-//        $this->call(CommunitySWSeeder::class);
-//        $this->call(PollingStationsSeeder::class);
-//        $this->call(PollingSWSeeder::class);
+        $this->call(ConstituenciesSeeder::class);
+        $this->call(PartySeeder::class);
+        $this->call(CandidateSeeder::class);
+        $this->call(CommunitySeeder::class);
+        $this->call(CommunitySWSeeder::class);
+        $this->call(PollingStationsSeeder::class);
+        $this->call(PollingSWSeeder::class);
 
 
     }
