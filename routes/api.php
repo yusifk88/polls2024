@@ -23,4 +23,5 @@ Route::get("/user",function (){
    $user = request()->user();
 
    return response()->json(["message"=>"User returned","data"=>$user]);
+
 })->middleware('auth:sanctum');

@@ -32,14 +32,13 @@
                         <v-btn v-if="!$vuetify.display.mobile" active-color="" color="" to="/sissala-east">Sisala East</v-btn>
                         <v-btn v-if="!$vuetify.display.mobile" color="" to="/sissala-west">Sisala West</v-btn>
 
-                    @if($user)
+
 
                     <template v-slot:append>
                         <record-component></record-component>
                         <record-press-component></record-press-component>
                     </template>
 
-                    @endif
 
                 </v-app-bar>
 
@@ -49,7 +48,7 @@
                             <v-col cols="12">
                                 <v-alert type="info" prominent variant="tonal" color="teal">
                                     <h2 class="text-h4 font-weight-black">Note:</h2>
-                                    <p>Results shown here provisional and projections by the Election House team of <a href="https://radfordfmnews.com/" target="_blank">Radford FM<sup><v-icon size="small">mdi-open-in-new</v-icon></sup></a></p>
+                                    <p>Results shown here are provisional and projections by the Election House team of <a href="https://radfordfmnews.com/" target="_blank">Radford FM<sup><v-icon size="small">mdi-open-in-new</v-icon></sup></a></p>
                                 </v-alert>
 
                                 <p class="mt-2">Design and developed by <a class="text-blue" target="_blank" href="https://linkedin.com/in/yusif-katulie-00a90414b">Yussif Katulie<sup><v-icon size="small" color="blue">mdi-open-in-new</v-icon></sup></a></p>
