@@ -17,12 +17,6 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::create([
-            "name"=>"Admin",
-            "email"=>"admin@radfordfmnews.com",
-            "password"=>Hash::make('Pa$$word@EH#24'),
-        ]);
-
         $this->call(ConstituenciesSeeder::class);
         $this->call(PartySeeder::class);
         $this->call(CandidateSeeder::class);
